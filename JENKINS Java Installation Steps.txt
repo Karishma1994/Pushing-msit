@@ -1,0 +1,77 @@
+
+sudo apt -y update
+java -version
+choose java version copy and paste as next command
+or else type sudo apt install openjdk-8-jre-headless
+java -version
+sudo apt-get install -y git maven
+wget https://get.jenkins.io/war-stable/2.332.2/jenkins.war
+will get the password copy password
+now open chrome and paste ip address:8080
+copy password and paste
+install pluggins
+when we lost connection
+connect ssh (copy and paste ssh i command)and then next type below command
+java -jar jenkins.war
+
+
+Username Karishma
+password Devops@11061994
+Full name Karishma S
+Email - karishma.devops@gmail.com
+Jenkins User ID: Karishma
+Jenkins url - http://65.2.142.81:8080/
+
+Alternate way of installing jenkins
+
+  sudo apt-get update
+
+  sudo apt-get install -y openjdk-8-jdk
+or java -version
+choose java version copy and paste as next command
+or else type sudo apt install openjdk-8-jre-headless
+
+java -version
+
+curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+
+sudo apt-get update
+
+sudo apt-get install Jenkins
+
+To get intial admin password for jenkins
+
+  sudo cat /var/lib/jenkins/secrets/initialAdminPassword 
+
+
+SIMPLE TASKS EXAMPLE
+1)Create a Folder Name   Test
+2) Create and Run a User Test Job That Saves Its Output in a File Named user_test.txt
+Using a freestyle build,
+configure and run a user_test job that outputs a file named user_test.txt in the Test folder. 
+Then, view the contents of the file to determine the version of Linux that is running and the user that ran the build.
+
+Practically doing now by folloung steps :
+New item
+enter an item folder
+choose folder save
+
+now select folder
+create new item in folder
+select free style project
+save
+build 
+shell build
+uname -a && whoami user_test.txt
+save
+click on build 
+build - click 
+will get output
+console output success
+
+
